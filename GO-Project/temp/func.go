@@ -6,5 +6,5 @@ import (
 
 func Greet(name string) {
 	fmt.Println("Hello, World!", name)
-	fmt.Println("This is a temporary package.")
+	// fmt.Println("This is a temporary package.")
 }
