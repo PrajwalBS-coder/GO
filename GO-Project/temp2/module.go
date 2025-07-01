@@ -12,5 +12,10 @@ func main(){
 	fmt.Println("Mean:", mean)
 	median := stat.Quantile(0.5, stat.Empirical, l, nil)
 	fmt.Println("Median:", median)
-	temp.Greet("John")
+	msg,err:=temp.Greet("")
+	if err!=nil{
+		fmt.Println(err)
+	}else{
+		fmt.Println(msg)
+	}
 }
