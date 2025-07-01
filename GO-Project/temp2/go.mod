@@ -4,7 +4,7 @@ module amin.com/temp2
 
 require amin.com/temp v0.0.0
 
-require gonum.org/v1/gonum v0.16.0 // 
+require gonum.org/v1/gonum v0.16.0 //
 
 replace amin.com/temp => ../temp
 
