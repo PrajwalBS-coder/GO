@@ -1,7 +1,7 @@
 package main
 
 import (
-	f "fmt" 
+	f "fmt"
 	r "reflect"
 )
 func main(){
@@ -13,5 +13,6 @@ func main(){
 	f.Println(b,r.TypeOf(b))
 	b[0]=100//Changing value sof perticular index
 	f.Println(b)
-
+	c:=[3]int{1,2,3} //for fixed size array if we give more value it will show error .\array.go:12:18: index 3 is out of bounds (>= 3)
+	f.Println(c,r.TypeOf(c))
 }
