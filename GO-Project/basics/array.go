@@ -13,5 +13,9 @@ func main(){
 	f.Println(b,r.TypeOf(b))
 	b[0]=100//Changing value sof perticular index
 	f.Println(b)
+	z:=[5]float64{}//for fixed size array if we print it will show empty values size times eg[5] values[0,0,0,0,0]
+	f.Println(z)
+	x:=[5]float32{1}//for fixed size if we have not provided enough values it will add empty values[1,0,0,0,0]
+	f.Println(x)
 
 }
