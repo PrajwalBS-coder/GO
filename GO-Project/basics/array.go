@@ -1,7 +1,7 @@
 package main
 
 import (
-	f "fmt" 
+	f "fmt"
 	r "reflect"
 )
 func main(){
@@ -18,4 +18,6 @@ func main(){
 	x:=[5]float32{1}//for fixed size if we have not provided enough values it will add empty values[1,0,0,0,0]
 	f.Println(x)
 
+	c:=[3]int{1,2,3} //for fixed size array if we give more value it will show error .\array.go:12:18: index 3 is out of bounds (>= 3)
+	f.Println(c,r.TypeOf(c))
 }
