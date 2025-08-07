@@ -23,5 +23,8 @@ func main(){
 		log.Fatal(err)
 	}else{
 		fmt.Println(msg)
+		for _,m:=range msg{
+			fmt.Println(m)
+		}
 	}
 }
