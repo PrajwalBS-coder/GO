@@ -14,4 +14,7 @@ func main(){
 	c:=[...]int{1,2,3,4} //for fixed size array if we give more value it will show error .\array.go:12:18: index 3 is out of bounds (>= 3)
 	f.Println(c,r.TypeOf(c))
 
+	d:=[5]int{0:1,4:9}//here 1st and last element will be 1 ,9 and rest of all will be assigned with 0
+	f.Println(d,r.TypeOf(d))
+
 }
