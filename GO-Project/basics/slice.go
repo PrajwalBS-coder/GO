@@ -23,4 +23,11 @@ func main(){
 	p := s3[0:5] //here data type will be []int here created variable using var keyword
 	f.Println(p, r.TypeOf(p))
 
+
+	//Creting slice through array
+	s4:=make([]float64,5,10) //here data type will be []int here created variable using var keyword
+	f.Println(s4, r.TypeOf(s4))
+	p1 := s4[0:5] //here data type will be []int here created variable using var keyword
+	f.Println(p1, r.TypeOf(p1))
+
 }
