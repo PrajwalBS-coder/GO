@@ -30,4 +30,13 @@ func main(){
 	p1 := s4[0:5] //here data type will be []int here created variable using var keyword
 	f.Println(p1, r.TypeOf(p1))
 
+
+
+	//opertions on slice
+	sl:=[]int{1,2,3,4,5,6,3}
+	sl[0]=100//Changing values of perticular index
+	f.Println(sl, r.TypeOf(sl))
+
+	
+
 }
