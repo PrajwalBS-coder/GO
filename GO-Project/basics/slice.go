@@ -37,6 +37,15 @@ func main(){
 	sl[0]=100//Changing values of perticular index
 	f.Println(sl, r.TypeOf(sl))
 
-	
+	//Append method in slice 
+	sl=append(sl,7,8,9,10)//Adding values to slice
+	f.Println(sl, r.TypeOf(sl))
+
+	sl2:=[]int{90,90,90}
+	sl=append(sl,sl2...) //Adding slice to slice here ... is used to add slice to slice which is mndtory
+	f.Println(sl, r.TypeOf(sl))
+
+
+
 
 }
