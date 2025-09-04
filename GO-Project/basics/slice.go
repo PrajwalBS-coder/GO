@@ -44,7 +44,9 @@ func main(){
 	sl2:=[]int{90,90,90}
 	sl=append(sl,sl2...) //Adding slice to slice here ... is used to add slice to slice which is mndtory
 	f.Println(sl, r.TypeOf(sl))
-
+sl3:=sl[:4] //here we need to give some sort of predefined length because if we not give it will show []
+copy(sl3,sl)	//Copying slice
+f.Println(sl3, r.TypeOf(sl3))
 
 
 
