@@ -48,5 +48,18 @@ func main() {
 	f.Println(x, r.TypeOf(x))
 	x >>= 3
 	f.Println(x, r.TypeOf(x))
+	
+
+	//Comparison operator
+
+var	z=10
+var y=20
+f.Println(z==y)
+f.Println(z!=y)
+f.Println(z>y)
+f.Println(z<y)
+f.Println(z>=y)
+f.Println(z<=y)
+
 
 }
