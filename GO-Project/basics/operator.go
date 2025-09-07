@@ -62,4 +62,11 @@ f.Println(z>=y)
 f.Println(z<=y)
 
 
+//Logicl opertor
+op:=10
+f.Println(op>1 && op==10)
+f.Println(op>10 || op==10)
+f.Println(op !=10)
+
+
 }
