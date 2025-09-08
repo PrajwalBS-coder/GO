@@ -68,5 +68,12 @@ f.Println(op>1 && op==10)
 f.Println(op>10 || op==10)
 f.Println(op !=10)
 
+//Bitwise Operators
+
+f.Println(10&9)//1010 +1001==1000=>8
+f.Println(10|9)//1010 +1001==1000=>11
+f.Println(10^11)//1010+1011==0001=>1
+f.Println(10<<1)//1010-->10100=>20
+f.Println(10>>1)//1010-->0101=>5
 
 }
