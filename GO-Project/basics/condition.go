@@ -1,6 +1,7 @@
- package main
+package main
 
 import f "fmt"
+
 // import r "reflect"
 
 func main(){
@@ -14,9 +15,19 @@ func main(){
 	if(a > b) {
 		f.Println("A is greater than B")
 	} 
-	else {//it'l throw error if we use else in the same line as closing bracket
+	// else {//it'l throw error if we use else in the same line as closing bracket
+	// 	f.Println("B is greater than A")
+	// }
+
+	if a == b {
+		f.Println("A is equal to B")
+	}else if a > b {
+		f.Println("A is greater than B")
+	}else {
 		f.Println("B is greater than A")
 	}
+
+
 
 
 }
