@@ -27,6 +27,16 @@ func main(){
 		f.Println("B is greater than A")
 	}
 
+	 num := 20
+	if num >= 10 {
+		f.Println("Num is more than 10.")
+		if num > 15 {
+		f.Println("Num is also more than 15.")
+		}
+	} else {
+		f.Println("Num is less than 10.")
+	}
+
 
 
 
