@@ -14,4 +14,12 @@ func main() {
 	default:
 		f.Println("A is not 10 or 20")
 	}
+
+
+	switch a{
+	case 10,20://Multiple case condition
+		f.Println("A is 10 or 20")
+	default:
+		f.Println("A is not 10 or 20")
+	}
 }
