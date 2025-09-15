@@ -15,6 +15,10 @@ import (
 func add(a int, b int) int { //here data type will be int here created variable using var keyword	
 	return a + b //here data type will be int here created variable using var keyword
 }
+
+func describe(name string, age int) { //here data type will be int here created variable using var keyword	
+	f.Println(name, "is", age, "years old") //here data type will be int here created variable using var keyword
+}
 func main(){
 	var a int = 10 //here data type will be int here created variable using var keyword
 	f.Println(a, r.TypeOf(a))
@@ -23,6 +27,7 @@ func main(){
 	var sum int = add(a, b) //here data type will be int here created variable using var keyword
 	f.Println(sum, r.TypeOf(sum))
 	f.Println(add(100,-90))
+	(describe("John", 25))
 
 
 }
