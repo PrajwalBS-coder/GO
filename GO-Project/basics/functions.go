@@ -22,6 +22,13 @@ func describe(name string, age int) { //here data type will be int here created 
 func addd(a, b int) int { //here data type will be int here created variable using var keyword	
 	return a + b //here data type will be int here created variable using var keyword	
 }
+
+//named return
+func des(a,b int)(result int) { //here data type will be int here created variable using var keyword	
+	result = a + b //here data type will be int here created variable using var keyword
+	return
+}
+
 func main(){
 	var a int = 10 //here data type will be int here created variable using var keyword
 	f.Println(a, r.TypeOf(a))
@@ -31,4 +38,6 @@ func main(){
 	f.Println(sum, r.TypeOf(sum))
 	f.Println(add(100,-90))
 	(describe("John", 25))
+	f.Println(addd(100,-90))
+	f.Println(des(100,-90))
 }
