@@ -28,6 +28,11 @@ func des(a,b int)(result int) { //here data type will be int here created variab
 	result = a + b //here data type will be int here created variable using var keyword
 	return
 }
+func addmul(a,b int)(result int, mul int) { //here data type will be int here created variable using var keyword	
+	result = a + b //here data type will be int here created variable using var keyword
+	mul = a * b //here data type will be int here created variable using var keyword
+	return
+}
 
 func main(){
 	var a int = 10 //here data type will be int here created variable using var keyword
@@ -40,4 +45,6 @@ func main(){
 	(describe("John", 25))
 	f.Println(addd(100,-90))
 	f.Println(des(100,-90))
+	ad,ml:=addmul(10,20)
+	f.Println(ad,ml)
 }
