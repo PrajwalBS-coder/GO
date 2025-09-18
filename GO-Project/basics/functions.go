@@ -47,4 +47,13 @@ func main(){
 	f.Println(des(100,-90))
 	ad,ml:=addmul(10,20)
 	f.Println(ad,ml)
+	testcount(1)
 }
+func testcount(x int) int {
+  if x == 11 {
+    return 0
+  }
+  f.Println(x)
+  return testcount(x + 1)
+}
+
