@@ -48,6 +48,7 @@ func main(){
 	ad,ml:=addmul(10,20)
 	f.Println(ad,ml)
 	testcount(1)
+	f.Println(factorial_recursion(5))
 }
 func testcount(x int) int {
   if x == 11 {
@@ -56,4 +57,14 @@ func testcount(x int) int {
   f.Println(x)
   return testcount(x + 1)
 }
+
+func factorial_recursion(x float64) (y float64) {
+  if x > 0 {
+     y = x * factorial_recursion(x-1)
+  } else {
+     y = 1
+  }
+  return
+}
+
 
