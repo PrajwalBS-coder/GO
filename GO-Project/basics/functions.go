@@ -35,20 +35,21 @@ func addmul(a,b int)(result int, mul int) { //here data type will be int here cr
 }
 
 func main(){
-	var a int = 10 //here data type will be int here created variable using var keyword
-	f.Println(a, r.TypeOf(a))
-	var b int = 20 //here data type will be int here created variable using var keyword
-	f.Println(b, r.TypeOf(b))
-	var sum int = add(a, b) //here data type will be int here created variable using var keyword
-	f.Println(sum, r.TypeOf(sum))
-	f.Println(add(100,-90))
-	(describe("John", 25))
-	f.Println(addd(100,-90))
-	f.Println(des(100,-90))
-	ad,ml:=addmul(10,20)
-	f.Println(ad,ml)
-	testcount(1)
-	f.Println(factorial_recursion(5))
+	// var a int = 10 //here data type will be int here created variable using var keyword
+	// f.Println(a, r.TypeOf(a))
+	// var b int = 20 //here data type will be int here created variable using var keyword
+	// f.Println(b, r.TypeOf(b))
+	// var sum int = add(a, b) //here data type will be int here created variable using var keyword
+	// f.Println(sum, r.TypeOf(sum))
+	// f.Println(add(100,-90))
+	// (describe("John", 25))
+	// f.Println(addd(100,-90))
+	// f.Println(des(100,-90))
+	// ad,ml:=addmul(10,20)
+	// f.Println(ad,ml)
+	// testcount(1)
+	// f.Println(factorial_recursion(5))
+	f.Println(rec(4),r.TypeOf(rec(4)))
 }
 func testcount(x int) int {
   if x == 11 {
@@ -65,6 +66,15 @@ func factorial_recursion(x float64) (y float64) {
      y = 1
   }
   return
+}
+
+func rec(x int)int{//Factorial recursion
+	if x==0{
+		return 1
+	}
+	
+	return x*rec(x-1)
+
 }
 
 
