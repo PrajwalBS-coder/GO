@@ -58,7 +58,7 @@ func testcount(x int) int {
   f.Println(x)
   return testcount(x + 1)
 }
-
+//Go accepts recursion functions. A function is recursive if it calls itself and reaches a stop condition.
 func factorial_recursion(x float64) (y float64) {
   if x > 0 {
      y = x * factorial_recursion(x-1)
