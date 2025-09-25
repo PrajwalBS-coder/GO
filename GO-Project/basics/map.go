@@ -31,4 +31,13 @@ func main() {
 
 	a:=map[string]int{"key":10,"value":20}
 	f.Println(a, r.TypeOf(a))
+
+//Syntax for map with make
+// m := make(map[string]int) within [] is key and int is value
+
+
+	b:=make(map[string]int)//Create empty map with use of make
+	b["key"] = 10
+	b["value"] = 20
+	f.Println(b, r.TypeOf(b))
 }
