@@ -40,4 +40,25 @@ func main() {
 	b["key"] = 10
 	b["value"] = 20
 	f.Println(b, r.TypeOf(b))
+
+
+	// Allowed Key Types
+
+// 	The map key can be of any data type for which the equality operator (==) is defined. These include:
+
+// Booleans
+// Numbers
+// Strings
+// Arrays
+// Pointers
+// Structs
+// Interfaces (as long as the dynamic type supports equality)
+// Invalid key types are:
+
+// Slices
+// Maps
+// Functions
+//These types are invalid because the equality operator (==) is not defined for them.
+
+
 }
