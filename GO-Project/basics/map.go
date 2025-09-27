@@ -60,5 +60,13 @@ func main() {
 // Functions
 //These types are invalid because the equality operator (==) is not defined for them.
 
+ var p = make(map[string]string)
+  p["brand"] = "Ford"
+  p["brand"] = "Ford"
+  p["model"] = "Mustang"
+  p["year"] = "1964"
+
+  f.Printf(p["brand"])
+
 
 }
