@@ -67,6 +67,10 @@ func main() {
   p["year"] = "1964"
 
   f.Printf(p["brand"])
+  //map_name[key] = value
+  p["year"] = "1970" // Updating an element
+  p["color"] = "red" // Adding an element
 
+  f.Println(p)
 
 }
