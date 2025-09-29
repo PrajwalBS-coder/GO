@@ -17,8 +17,11 @@
 // b := map[KeyType]ValueType{key1:value1, key2:value2,...}
 
 package main
-import f "fmt"
-import r "reflect"
+
+import (
+	f "fmt"
+	r "reflect"
+)
 func main() {
 	var m map[string]int //here data type will be map[string]int here created variable using var keyword
 	f.Println(m, r.TypeOf(m))
@@ -72,5 +75,16 @@ func main() {
   p["color"] = "red" // Adding an element
 
   f.Println(p)
+
+// Remove Element from Map
+// Removing elements is done using the delete() function.
+
+// Syntax
+// delete(map_name, key)
+
+delete(p, "model")
+f.Println(p)
+
+
 
 }
