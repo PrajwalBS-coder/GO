@@ -86,5 +86,13 @@ delete(p, "model")
 f.Println(p)
 
 
+// Check For Specific Elements in a Map
+// Syntax
+// val, ok :=map_name[key]
+
+val, ok := p["VBN"]
+f.Println(val, ok)//val actaull value of year if the key is there and ok will be true else it will be false
+
+
 
 }
