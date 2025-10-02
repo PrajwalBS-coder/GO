@@ -93,6 +93,7 @@ f.Println(p)
 val, ok := p["VBN"]
 f.Println(val, ok)//val actaull value of year if the key is there and ok will be true else it will be false
 
-
+var l =make(map[string]int)
+f.Println(l, r.TypeOf(l))
 
 }
