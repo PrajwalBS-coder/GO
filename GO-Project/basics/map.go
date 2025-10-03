@@ -96,4 +96,16 @@ f.Println(val, ok)//val actaull value of year if the key is there and ok will be
 var l =make(map[string]int)
 f.Println(l, r.TypeOf(l))
 
+f.Println(l["key"])
+
+
+// Maps are references to hash tables.
+
+// If two map variables refer to the same hash table, changing the content of one variable affect the content of the other.
+
+var k=p
+k["year"] = "1190"
+f.Println(k, r.TypeOf(k))
+f.Println(p, r.TypeOf(p))
+
 }
