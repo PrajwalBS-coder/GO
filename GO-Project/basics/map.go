@@ -108,4 +108,11 @@ k["year"] = "1190"
 f.Println(k, r.TypeOf(k))
 f.Println(p, r.TypeOf(p))
 
+// Iterate Over Maps
+// You can use range to iterate over maps.
+
+for key,value := range p{
+	f.Println(key, value)
+}
+
 }
