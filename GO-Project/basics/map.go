@@ -115,4 +115,23 @@ for key,value := range p{
 	f.Println(key, value)
 }
 
+// Iterate Over Maps in a Specific Order
+// Maps are unordered data structures. If you need to iterate over a map in a specific order, you must have a separate data structure that specifies that order.
+
+
+ a= map[string]int{"one": 1, "two": 2, "three": 3, "four": 4}
+
+  var x []string             // defining the order
+  x = append(x, "one", "two", "three", "four")
+
+  for k, v := range a {        // loop with no order
+    f.Printf("%v : %v, ", k, v)
+  }
+
+  f.Println()
+
+  for _, element := range x {  // loop with the defined order
+    f.Printf("%v : %v, ", element, a[element])
+  }
+
 }
