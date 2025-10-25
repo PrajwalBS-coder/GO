@@ -47,6 +47,7 @@ func examineRune(r rune) {
     }
 }
 
+
 // s is a string assigned a literal value representing the word “hello” in the Thai language. 
 // Go string literals are UTF-8 encoded text.
 // Since strings are equivalent to []byte, this will produce the length of the raw bytes stored within.
