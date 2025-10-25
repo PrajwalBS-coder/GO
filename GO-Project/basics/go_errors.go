@@ -58,3 +58,4 @@ func main() {
 // This contrasts with the exceptions used in languages like Java, Python and Ruby and the overloaded single result / error value sometimes used in C. 
 // Go’s approach makes it easy to see which functions return errors and to handle them using the same language constructs employed for other, non-error tasks.
 // See the documentation of the errors package and this blog post for additional details.
+
