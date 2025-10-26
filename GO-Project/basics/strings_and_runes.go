@@ -63,3 +63,12 @@ func examineRune(r rune) {
 // This demonstrates passing a rune value to a function.
 // Values enclosed in single quotes are rune literals. 
 // We can compare a rune value to a rune literal directly.
+// By convention, errors are the last return value and have type error, a built-in interface.
+// errors.New constructs a basic error value with the given error message.
+// A nil value in the error position indicates that there was no error.
+// A sentinel error is a predeclared variable that is used to signify a specific error condition.
+// We can wrap errors with higher-level errors to add context. 
+// The simplest way to do this is with the %w verb in fmt.Errorf. 
+// Wrapped errors create a logical chain (A wraps B, which wraps C, etc.) that can be queried with functions like errors.Is and errors.As.
+// It’s idiomatic to use an inline error check in the if line.
+// errors.Is checks that a given error (or any error in its chain) matches a specific error value. This is especially useful with wrapped or nested errors, allowing you to identify specific error types or sentinel errors in a chain of errors.
